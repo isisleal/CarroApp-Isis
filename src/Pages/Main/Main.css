@@ -1,0 +1,53 @@
+.form-container{
+    height: 24vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(62, 62, 62, 0.92);
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.label-form{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: rgba(245, 245, 245, 0.9);
+}
+
+.text-white{
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);    
+}
+
+@media(min-width: 768px){
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(62, 62, 62, 0.8);
+}
+
+.opcao{
+    width: 50%;
+}
+
+.App-content{
+    background-color: rgba(60, 60, 60, 0.6);
+    padding-bottom: 10px;
+}
+
+.btn{
+    background-color: rgba(255, 255, 255, 0.267);
+    margin: 0;
+}
+.label-form{
+    color: white;
+}
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import './Carro.css'
 
 class Carro extends React.Component{
     constructor(props){
@@ -24,12 +25,12 @@ componentDidMount(){
 render(){
     
     return(
-        <div> 
-           <p> Marca: {this.state.detalhe.marca}</p>
-           <p>Modelo: {this.state.detalhe.name}</p>
-           <p>Ano: {this.state.detalhe.ano_modelo}</p>
-           <p>Preço: {this.state.detalhe.preco}</p>
-           <p>Combustível: {this.state.detalhe.combustivel}</p>
+        <div className="App-content-car"> 
+           <p><b className="bold">Marca :</b>  {this.state.detalhe.marca}</p>
+           <p><b className="bold">Modelo :</b>  {this.state.detalhe.name}</p>
+           <p><b className="bold">Ano :</b>  {this.state.detalhe.ano_modelo}</p>
+           <p><b className="bold">Preço :</b>  {this.state.detalhe.preco}</p>
+           <p><b className="bold">Combustível :</b>  {this.state.detalhe.combustivel}</p>
 
         </div>
         

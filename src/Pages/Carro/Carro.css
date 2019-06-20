@@ -1,0 +1,28 @@
+.App-content-car{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.App-content-car p{
+    background-color: rgba(63, 62, 62, 0.85);
+    display: block;
+    margin: 5px;
+    height: 16vh;
+    font-size: 22px;
+    color: white;
+    padding-left: 15px;
+    line-height: 16vh;
+}
+
+.bold{
+    font-size: 24px;
+    color: rgb(199, 230, 245);
+}
+
+
+@media(min-width: 768px){
+    .App-content-car p{
+        background-color: rgba(63, 62, 62, 0.97);
+}
+}

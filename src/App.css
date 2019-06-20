@@ -1,4 +1,21 @@
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  background-image: url('./assets/speed-1249610_1280_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+
+@media(min-width: 768px){
+  .App {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('./assets/speed-1249610_1280_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+}

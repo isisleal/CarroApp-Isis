@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Form, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import './Main.css'
 
 
 class Main extends Component {
@@ -75,45 +76,43 @@ class Main extends Component {
 
     return (
 
-      <div className="App">
+      <div className="App-content">
 
       <Form onSubmit={this.handleSubmit}>
         
-        <Form.Group bsPrefix={ 'form p-3 mb-2 bg-primary text-white'}>
-            <Form.Label>Marca:</Form.Label>
-            <Form.Control as="select" onChange={this.handleChangeModel}>
+        <Form.Group bsPrefix={ 'form p-3 mb-2'} className="form-container">
+            <Form.Label className="label-form">Marca:</Form.Label>
+            <Form.Control className="opcao" as="select" onChange={this.handleChangeModel}>
             <option>Selecione a marca</option>
               {listMarca}
             </Form.Control>
         </Form.Group>
         
-        <Form.Group bsPrefix={ 'form p-3 mb-2 bg-primary text-white'}>
-            <Form.Label>Carro:</Form.Label>
-            <Form.Control as="select" onChange={this.handleChangeYear}>
+        <Form.Group bsPrefix={ 'form p-3 mb-2'} className="form-container">
+            <Form.Label className="label-form">Carro:</Form.Label>
+            <Form.Control className="opcao"  as="select" onChange={this.handleChangeYear}>
             <option>Selecione o carro</option>
               {listCar}
             </Form.Control>
         </Form.Group>
        
-        <Form.Group bsPrefix={ 'form p-3 mb-2 bg-primary text-white'}>
-            <Form.Label>Ano:</Form.Label>
-            <Form.Control as="select" onChange={this.getIds} >
+        <Form.Group bsPrefix={ 'form p-3 mb-2'} className="form-container">
+            <Form.Label className="label-form">Ano:</Form.Label>
+            <Form.Control className="opcao"  as="select" onChange={this.getIds} >
             <option>Selecione o ano</option>
               {listYear}
             </Form.Control>
         </Form.Group>
 
-        <Button type="submit">
-        <Link to={{
+        <Button className="btn" variant="secondary" type="submit">
+        <Link className="text-white" to={{
           pathname: `/carro/${this.idModelo}`,
-          state: { carro: this.idCarro, anoId: this.idAno }}}>Mostrar detalhes</Link>
+          state: { carro: this.idCarro, anoId: this.idAno }}}>Pesquisar</Link>
         </Button>
 
     </Form>
        
-      
-  
-        
+    
       </div>
     );
   }
