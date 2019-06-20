@@ -20,9 +20,3 @@
     color: rgb(199, 230, 245);
 }
 
-
-@media(min-width: 768px){
-    .App-content-car p{
-        background-color: rgba(63, 62, 62, 0.97);
-}
-}

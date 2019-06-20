@@ -15,7 +15,7 @@ class Layout extends React.Component{
                 <div className="main-header">
                 <Navbar expand="lg" className="nav-bar-content">
 
-                <Navbar.Text className="text-white txt-nav">Quanto vale o seu carro?</Navbar.Text>
+                <Navbar.Text className="text-white txt-nav">Quanto vale meu carro?</Navbar.Text>
             
                 <Nav className="float-right">
                 <Nav.Link className="text-white" href="/">Home</Nav.Link>
